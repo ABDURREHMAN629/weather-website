@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="w.css">
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="navbar-wrapper">
+            <nav class="navbar">
+                <div class="navbar-left">AR WeatherApp</div>
+                <div class="navbar-right">
+                    <ul class="nav-links">
+                        <li><a href="#main">Home</a></li>
+                        <li><a href="#forecast">Forecast</a></li>
+                        <li><a href="#other-details">Other Details</a></li>
+                        <li><a href="#more">More</a></li>
+                        <li><a href="#">Maps</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="main" id="main">
+            <div class="left">
+                <div>
+                    <h1>Daily Weather Forecast
+                        Updates City Wise</h1>
+                    <p>Get the latest weather forecast for today with up-to-date
+                        information on temperature, precipitation, and more.</p>
+                </div>
+                <div>
+                    <div class="input-section">
+                        <input type="text" placeholder="Enter your city" class="input-box" id="input_box">
+                        <button class="searchbtn" id="searchbtn">Search</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="search-box">
+                    <div class="images">
+                        <div class="div29">
+                            <p class="name" id="name">Shahkot</p>
+                        </div>
+                        <div class="div-img"><img class="weather-img" src="images/summer.png" alt="weather-img"></div>
+                    </div>
+                    <div class="div5">
+                        <h5>Appearance:</h5>
+                        <p class="weather-main" id="weather-main"></p>
+                    </div>
+                    <div class="temperature-display">
+                        <h5>Temperature:</h5>
+                        <p class="temprature" id="temprature">
+                            0 <sup>o</sup>C
+                        </p>
+                    </div>
+
+                    <div class="div12">
+                        <h5>Humidity:</h5>
+                        <p class="humidity" id="humidity">0</p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <section id="forecast">
+        <div class="details">
+            <div class="details-text">
+                <h2>Today Weather Details</h2>
+                <p>The 'Recent Search Weather' section displays the latest weather information for the cities you have
+                    recently
+                    searched. Stay up-to-date with the weather conditions of your preferred cities with this section.
+                </p>
+            </div>
+            <div class="details-body">
+                <div>
+                    <div>
+                        <div class="div9">
+                            <h5>Minimum-Temp:</h5>
+                            <p class="temp_min" id="temp_min">0</p>
+                        </div>
+                        <div class="div10">
+                            <h5>Maximum-Temp:</h5>
+                            <p class="temp_max" id="temp_max">0</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="div16">
+                            <h5>Wind:</h5>
+                            <p class="speed" id="speed">0</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="search-box1">
+                        <div class="images1">
+                            <div class="div29">
+                                <p class="name1" id="name1">Shahkot</p>
+                            </div>
+                            <div class="div-img-1"><img class="weather-img1" id="weather-img-1" src="images/summer.png"
+                                    alt="weather-img">
+                            </div>
+                        </div>
+                        <div class="temperature-display-1">
+                            <p class="temprature1" id="temprature1">
+                                0 <sup>o</sup>C
+                            </p>
+                        </div>
+                        <div class="w-main">
+                            <p class="weather-main1" id="weather-main1"></p>
+                            <h5>| Appearance</h5>
+
+                        </div>
+                        <div class="des">
+                            <h5>Description:</h5>
+                            <p class="description" id="description">0</p>
+                        </div>
+                        <div class="hum">
+
+                            <p class="humidity1" id="humidity1">0</p>
+                            <h5>| Humidity</h5>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="body-4">
+                    <div class="body-4">
+                        <div class="div8">
+                            <h5>Feels_Like:</h5>
+                            <p class="feels_like" id="feels_like">0</p>
+                            <h5>Pressure:</h5>
+                            <p class="pressure" id="pressure">0</p>
+                        </div>
+                    </div>
+                    <div class="body-5">
+                        <div class="div15">
+                            <h5>Visibility:</h5>
+                            <p class="visibility" id="visibility">0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Screen 1 -->
+
+    <div class="container1" id="other-details">
+        <div class="details-text1">
+            <h2>Other Weather Details</h2>
+            <p class="info-text">This section provides a detailed view of the current weather data, including
+                geographical coordinates,
+                atmospheric levels, system details, and sun timings. Use this information to understand the complete
+                weather
+                conditions for your selected location in real-time.
+            </p>
+        </div>
+        <div class="container1 screen-1">
+            <div class="div2">
+                <h5>Longitude:</h5>
+                <p class="long" id="long">0</p>
+            </div>
+            <div class="div3">
+                <h5>Latitude:</h5>
+                <p class="lat" id="lat">0</p>
+            </div>
+            <div class="div4">
+                <h5>Id:</h5>
+                <p class="weatherid" id="weatherid">0</p>
+            </div>
+
+            <div class="div7">
+                <h5>Icon:</h5>
+                <p class="icon" id="icon">0</p>
+            </div>
+            <div class="div13">
+                <h5>Sea-Level:</h5>
+                <p class="sea_level" id="sea_level">0</p>
+            </div>
+            <div class="div14">
+                <h5>Grnd-Level:</h5>
+                <p class="grnd_level" id="grnd_level">0</p>
+            </div>
+            <div class="div17">
+                <h5>Deg:</h5>
+                <p class="deg" id="deg">0</p>
+            </div>
+            <div class="div18">
+                <h5>Gust:</h5>
+                <p class="gust" id="gust">0</p>
+            </div>
+        </div>
+    </div>
+    <!-- Screen 2 -->
+    <div class="container1" id="more">
+        <div class="details-text1">
+            <h2>Other Weather Details</h2>
+            <p class="info-text">This section provides a detailed view of the current weather data, including
+                geographical coordinates,
+                atmospheric levels, system details, and sun timings. Use this information to understand the complete
+                weather
+                conditions for your selected location in real-time.
+            </p>
+        </div>
+        <div class="container1 screen-2">
+            <div class="div19">
+                <h5>1h:</h5>
+                <p class="rain1h" id="rain1h">0</p>
+            </div>
+            <div class="div20">
+                <h5>All:</h5>
+                <p class="all" id="all">0</p>
+            </div>
+            <div class="div21">
+                <h5>Dt:</h5>
+                <p class="dt" id="dt">0</p>
+            </div>
+            <div class="div22">
+                <h5>Type:</h5>
+                <p class="type" id="type">0</p>
+            </div>
+            <div class="div23">
+                <h5>Sys-id:</h5>
+                <p class="sys_id" id="sys_id">0</p>
+            </div>
+            <div class="div24">
+                <h5>Country:</h5>
+                <p class="country" id="country">0</p>
+            </div>
+            <div class="div25">
+                <h5>Sunrise:</h5>
+                <p class="sunrise" id="sunrise">0</p>
+            </div>
+            <div class="div26">
+                <h5>Sunset</h5>
+                <p class="sunset" id="sunset">0</p>
+            </div>
+            <div class="div27">
+                <h5>TimeZone:</h5>
+                <p class="timezone" id="timezone">0</p>
+            </div>
+            <div class="div28">
+                <h5>Id:</h5>
+                <p class="id" id="id">0</p>
+            </div>
+            <div class="div30">
+                <h5>Cod:</h5>
+                <p class="cod" id="cod">0</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+
+
+            <div class="footer-column">
+                <h3>AREW</h3>
+                <p>
+                    Let us help you yield your true academic potential for foreign education.
+                    To configure and discover an apt international enrolment strategy, get in touch!
+                </p>
+
+
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+
+            <div class="footer-column">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Partners</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#">News & Events</a></li>
+                    <li><a href="#">Teams</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-column" id="footer">
+                <h4>Information</h4>
+                <p>📞 +92 324 7440 629</p>
+                <p>✉️ gabdurrehman493
+                    @gmail.com</p>
+                <p>📍 Faisalabad</p>
+            </div>
+
+
+            <div class="social-icons">
+                <a href="#"><img src="images/fb.jpeg" alt="Facebook"></a>
+                <a href="#"><img src="images/twitter.jpeg" alt="Twitter"></a>
+                <a href="#"><img src="images/insta.jpeg" alt="Instagram"></a>
+                <a
+                    href="https://www.linkedin.com/in/abdur-rehman-9b6255209?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><img
+                        src="images/linkid.jpeg" alt="LinkedIn"></a>
+                <a href="https://youtube.com/@abdurrehmang9311?si=2I-ABSBIVcQK1kLK"><img src="images/yt.jpeg"
+                        alt="YouTube"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
